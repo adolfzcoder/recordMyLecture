@@ -186,7 +186,7 @@ def main():
     module_name_entry.config(highlightthickness=2)
     module_name_entry.pack(pady=(0,10))
 
-    tk.Label(root, text="Week Number:", font=font, padx=padx, pady=pady, bg="lightblue").pack()
+    tk.Label(root, text="Topic:", font=font, padx=padx, pady=pady, bg="lightblue").pack()
     week_num_entry = tk.Entry(root)
     week_num_entry = tk.Entry(root, width=20)
     week_num_entry.config(font=('Arial', 18))  # Set font size for better visibility
@@ -208,7 +208,7 @@ def main():
         module_name = module_name_entry.get().upper()
         week_num = week_num_entry.get()
         seconds = int(seconds_entry.get()) * 60       #convert to minutes
-        messagebox.showinfo("Values Retrieved", f"Module Name: {module_name}\nWeek Number: {week_num}\nDuration: {seconds} Minutes")
+        messagebox.showinfo("Values Retrieved", f"Module Name: {module_name}\nWeek Number: {week_num}\nDuration: {seconds/60} Minutes")
         recLecture(seconds, module_name, week_num) 
     submit_button = tk.Button(root, text="Submit", command=get_values, font=18, padx= 15, pady=10, bg = "lightblue")
     submit_button.pack()
