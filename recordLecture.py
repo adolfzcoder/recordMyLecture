@@ -163,7 +163,7 @@ def main():
 
     if is_first_run():
         welcome_message()
-        messagebox.showinfo("PS", "All the courses at NUST will be made as folders on your computer, simply delete the ones you are not doing. IF you are not from NUST then kindly contact me in order for me to make edits tailored for your insitiution (Add your institutions Modules to the app). If you are from NUST and your Subjects are not there, please contact me to add them +264 8161 66875")
+        messagebox.showinfo("PS", "All the courses at NUST will be made as folders on your computer, simply delete the ones you are not doing. IF you are not from NUST then kindly contact me in order for me to make edits tailored for your insitiution (Add your institutions Modules to the app). If you are from NUST and your Subjects are not there, please contact me to add them")
 
     else:
         print("Script has been run before. Skipping module initialization.")
